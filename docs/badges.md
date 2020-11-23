@@ -1,5 +1,4 @@
 [![Travis](https://travis-ci.com/openacid/{{ name }}.svg?branch=main)](https://travis-ci.com/openacid/{{ name }})
-<!-- [![AppVeyor](https://ci.appveyor.com/api/projects/status/m0vvvrru7a1g4mae/branch/main?svg=true)](https://ci.appveyor.com/project/drmingdrmer/{{ name }}/branch/main) -->
 ![test](https://github.com/openacid/{{ name }}/workflows/test/badge.svg)
 
 [![Report card](https://goreportcard.com/badge/github.com/openacid/{{ name }})](https://goreportcard.com/report/github.com/openacid/{{ name }})
