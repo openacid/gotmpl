@@ -57,7 +57,14 @@ if __name__ == "__main__":
             "name": name
     }
 
-    fns = os.listdir('docs')
-    for fn in fns:
-        if fn.endswith('.md.j2'):
-            render_j2('docs/'+fn, tmpl_vars, fn[:-3])
+    for d, subdir, fns in os.walk('_tmpl'):
+        for fn in fns:
+            if not fn.endswith('.md.j2'):
+                continue
+
+            print(d, fn)
+
+            dst = d + '/' + fn[:-3]
+            dst = '/'.join(os.path.split(dst)[1:])
+            print(dst)
+            render_j2(d + '/'+fn, tmpl_vars, dst)
